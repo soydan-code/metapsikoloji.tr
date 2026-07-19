@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Psikolog | MetaPsikoloji — Profesyonel Online Terapi ve Danışmanlık</title>
+<meta name="description" content="MetaPsikoloji ile ev konforunda profesyonel online psikolog desteği. 6 yıllık klinik tecrübe, bilimsel ve etik çerçevede online terapi. Ücretsiz ön görüşme randevusu alın.">
+<link rel="canonical" href="https://www.metapsikoloji.tr/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#F6F8FB">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="MetaPsikoloji">
+<meta property="og:title" content="Online Psikolog | MetaPsikoloji">
+<meta property="og:description" content="Ev konforunda, profesyonel ve güvenli online terapi. Ücretsiz ön görüşme randevusu alın.">
+<meta property="og:url" content="https://www.metapsikoloji.tr/">
+<meta property="og:image" content="https://www.metapsikoloji.tr/gorseller/og-kapak.jpg">
+
+<!-- Yazı tipi: tek aile (hız için). Gövde metni sistem fontu kullanır. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TAKİP KODLARI ALANI — HEAD
+     Aşağıdaki üç bloğa ilgili kodları OLDUĞU GİBİ yapıştırın.
+     ═══════════════════════════════════════════════════════════════ -->
+
+<!-- ▼ 1) GOOGLE ANALYTICS 4 (GA4) — gtag.js kodu buraya -->
+
+<!-- ▲ GA4 sonu -->
+
+<!-- ▼ 2) GOOGLE ADS GLOBAL SITE TAG (Dönüşüm Etiketi temel kodu) buraya -->
+
+<!-- ▲ Google Ads sonu -->
+
+<!-- ▼ 3) META (FACEBOOK) PIXEL kodu buraya -->
+
+<!-- ▲ Meta Pixel sonu -->
+
+<!-- Yapılandırılmış veri (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "MetaPsikoloji",
+  "description": "Türkçe online psikolog ve online terapi hizmeti. Türkiye ve Avrupa'daki Türkler için bilimsel, etik ve gizlilik odaklı çevrimiçi danışmanlık.",
+  "url": "https://www.metapsikoloji.tr/",
+  "address": { "@type": "PostalAddress", "addressLocality": "İstanbul", "addressCountry": "TR" },
+  "areaServed": ["TR", "EU"],
+  "availableLanguage": "tr",
+  "founder": { "@type": "Person", "name": "Emin Soydan", "jobTitle": "Uzman Psikolog" },
+  "sameAs": [
+    "https://www.instagram.com/metapsikoloji_tr/",
+    "https://www.instagram.com/psk.eminsoydan/",
+    "https://www.linkedin.com/in/emin-soydan-a88654137",
+    "https://www.linkedin.com/company/metapsikoloji"
+  ]
+}
+</script>
+
+<style>
+/* ═══ Tasarım değişkenleri — logo paleti + tasarım brief'i (v3) ═══ */
+:root{
+  --lacivert:#1B1D4B;       /* gece mavisi: başlıklar, bant, footer (brief) */
+  --lacivert-koyu:#131538;
+  --mavi:#2F569F;           /* koyu marka mavisi */
+  --gok:#2F6CB3;            /* linkler, odak halkaları */
+  --indigo:#48407C;
+  --pembe:#D6246A;          /* birincil CTA — magenta (AA uyumlu) */
+  --pembe-koyu:#C21E5F;
+  --pembe-ham:#E05A76;      /* dekoratif: yumuşatılmış logo pembesi */
+  --yesil:#8DC6A3;          /* logo dairesi yeşili */
+  --adacayi:#E9EFE6;        /* adaçayı pastel fon */
+  --tozmavi:#E4EBF2;        /* toz mavi pastel fon */
+  --terrakotta:#F2E6DC;     /* pastel terracotta fon */
+  --zemin:#F7F5F1;          /* kırık beyaz / açık vizon zemin (brief) */
+  --beyaz:#FFFFFF;
+  --murekkep:#1E2142;
+  --soluk:#4A5170;
+  --acik-mavi:#9CC8EA;
+  --wa:#1FAF56;
+  --wa-koyu:#178A44;
+  --cizgi:rgba(27,29,75,.12);
+  --cizgi-bant:rgba(255,255,255,.16);
+  --radius:14px;
+  --btn-radius:12px;        /* soft köşe — pill değil (brief) */
+  --govde:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+}
+
+/* ═══ Temel ═══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--govde);color:var(--murekkep);background:var(--zemin);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.kap{width:min(100% - 2.5rem,68rem);margin-inline:auto}
+.bolum{padding:4.5rem 0}
+@media(min-width:768px){.bolum{padding:6.5rem 0}}
+
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.18;letter-spacing:-.01em;color:var(--lacivert)}
+/* Motto/eyebrow: logodaki "meta" gibi ince ve geniş aralıklı */
+.gozluk{font-family:var(--govde);font-size:.8rem;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--mavi);display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.gozluk::before{content:"";width:26px;height:1px;background:currentColor}
+.koyu .gozluk{color:var(--acik-mavi)}
+
+/* ═══ Butonlar ═══ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--govde);font-weight:600;font-size:1rem;line-height:1.2;padding:.95rem 1.5rem;border-radius:var(--btn-radius);border:1px solid transparent;cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s ease,border-color .15s ease,color .15s ease;min-height:48px}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:3px solid var(--gok);outline-offset:3px}
+.btn-birincil{background:var(--pembe);color:#fff}
+.btn-birincil:hover{background:var(--pembe-koyu);box-shadow:0 8px 24px rgba(214,36,106,.26)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-koyu);box-shadow:0 8px 24px rgba(31,175,86,.26)}
+.btn-cerceve{border-color:rgba(27,29,75,.28);color:var(--lacivert);background:transparent}
+.btn-cerceve:hover{border-color:var(--mavi);color:var(--mavi)}
+.btn svg{flex:none}
+
+/* ═══ Header (buzlu cam) ═══ */
+.ust{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.82);backdrop-filter:blur(14px) saturate(1.15);-webkit-backdrop-filter:blur(14px) saturate(1.15);border-bottom:1px solid var(--cizgi)}
+.ust-ic{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.7rem 0}
+.marka{display:flex;align-items:center;gap:.55rem;text-decoration:none}
+/* Şeffaf logo geldiğinde bu span yerine <img src="gorseller/logo.png" alt="MetaPsikoloji" height="34"> koyun */
+.marka-yazi{font-family:var(--govde);font-size:1.18rem;font-weight:300;letter-spacing:.06em;color:var(--lacivert)}
+.marka-yazi b{font-weight:800;letter-spacing:.01em}
+.ust-eylem{display:flex;align-items:center;gap:.5rem}
+.ust .btn{padding:.6rem 1rem;font-size:.9rem;min-height:42px}
+.ust .btn-ara{background:transparent;border-color:rgba(27,29,75,.28);color:var(--lacivert)}
+.ust .btn-ara:hover{border-color:var(--mavi);color:var(--mavi)}
+.ust .btn span.gizle{display:none}
+@media(min-width:560px){.ust .btn span.gizle{display:inline}}
+
+/* ═══ Hero: sisli dağ katmanları + buzlu cam panel ═══ */
+.kahraman{position:relative;background:
+  radial-gradient(560px 420px at 85% 6%,rgba(47,108,179,.10),transparent 68%),
+  radial-gradient(420px 340px at 6% 90%,rgba(224,90,118,.06),transparent 72%),
+  linear-gradient(180deg,#FBFAF7 0%,var(--zemin) 100%);
+  color:var(--murekkep);overflow:hidden}
+/* Hero fotoğraf yuvası: gorseller/hero-dag.webp yüklenirse dağ silüetlerinin yerini alır */
+.hero-foto{position:absolute;inset:0;background:linear-gradient(180deg,rgba(251,250,247,.5),rgba(247,245,241,.72)),url('gorseller/hero-dag.webp') center 30%/cover no-repeat;pointer-events:none}
+.dag{position:absolute;inset:auto 0 0 0;height:100%;pointer-events:none}
+.dag svg{position:absolute;bottom:-2px;left:0;width:100%;height:62%;min-width:900px;will-change:transform}
+.halka{position:absolute;border:1px solid rgba(27,29,75,.09);border-radius:50%;pointer-events:none}
+.halka-1{width:520px;height:520px;right:-160px;top:-140px}
+.halka-2{width:820px;height:820px;right:-310px;top:-290px;opacity:.7}
+.halka-3{width:1120px;height:1120px;right:-460px;top:-440px;opacity:.4}
+.kahraman .kap{position:relative;z-index:2;padding:4.5rem 0 5.5rem}
+@media(min-width:768px){.kahraman .kap{padding:6.5rem 0 7.5rem}}
+/* Buzlu cam panel: derinliği öldürmeden içerik zemini */
+.cam{max-width:44rem;padding:clamp(1.6rem,4.5vw,2.8rem);border-radius:18px;background:rgba(255,253,249,.55);border:1px solid rgba(255,255,255,.55);box-shadow:0 18px 50px rgba(27,29,75,.10);backdrop-filter:blur(14px) saturate(1.12);-webkit-backdrop-filter:blur(14px) saturate(1.12)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.cam{background:rgba(255,253,249,.92)}}
+h1{font-size:clamp(1.85rem,5.4vw,3.3rem);max-width:21ch}
+.h1-marka{display:block;font-size:clamp(.95rem,2.4vw,1.1rem);font-family:var(--govde);font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:var(--mavi);margin-bottom:1rem}
+.h1-ayrac{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.alt-baslik{font-size:clamp(1.05rem,2.6vw,1.22rem);color:var(--soluk);max-width:52ch;margin:1.4rem 0 2rem}
+.cta-grup{display:flex;flex-wrap:wrap;gap:.8rem}
+.guven-notu{margin-top:1.3rem;font-size:.9rem;color:var(--soluk)}
+.guven-notu b{color:var(--pembe);font-weight:700}
+
+/* Güven şeridi — adaçayı fonu */
+.serit{border-top:1px solid var(--cizgi);background:rgba(233,239,230,.85);position:relative;z-index:2}
+.serit-ic{display:grid;grid-template-columns:1fr;gap:1rem;padding:1.4rem 0}
+@media(min-width:640px){.serit-ic{grid-template-columns:repeat(3,1fr)}}
+.serit-oge{display:flex;gap:.7rem;align-items:baseline;font-size:.95rem;color:var(--soluk)}
+.serit-oge b{font-family:var(--serif);font-size:1.35rem;color:var(--lacivert);font-weight:500}
+
+/* ═══ Uzman bölümü ═══ */
+.uzman-izgara{display:grid;gap:2.5rem;align-items:start}
+@media(min-width:880px){.uzman-izgara{grid-template-columns:minmax(280px,380px) 1fr;gap:4rem}}
+/* Fotoğraf çerçevesi: pastel terracotta fonu */
+.foto-cerceve{position:relative;aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(165deg,var(--terrakotta),#EAD9CA);border:1px dashed rgba(27,29,75,.35);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--soluk);font-size:.85rem;padding:1rem}
+.foto-cerceve::after{content:"";position:absolute;inset:14px;border:1px solid rgba(27,29,75,.15);border-radius:10px;pointer-events:none}
+.uzman-metin p{margin-bottom:1rem;color:var(--soluk);max-width:60ch}
+.uzman-metin p b{color:var(--murekkep);font-weight:600}
+.uzman-metin p a{color:var(--gok)}
+.uzman-metin .btn{margin-top:.4rem}
+.rozetler{margin-top:2.2rem}
+.rozet-baslik{font-size:.76rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--soluk);margin-bottom:.9rem}
+.rozet-izgara{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}
+@media(min-width:560px){.rozet-izgara{grid-template-columns:repeat(4,1fr)}}
+.rozet{aspect-ratio:5/3;border:1px dashed var(--cizgi);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:var(--soluk);background:#fff;filter:grayscale(1);text-align:center;padding:.4rem}
+.sosyal{margin-top:2.2rem;padding-top:1.6rem;border-top:1px solid var(--cizgi)}
+.sosyal-izgara{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
+.cip{display:inline-flex;align-items:center;gap:.45rem;font-size:.86rem;font-weight:600;color:var(--murekkep);text-decoration:none;border:1px solid rgba(27,29,75,.18);border-radius:10px;padding:.5rem .95rem;background:#fff;transition:border-color .15s,color .15s}
+.cip:hover{border-color:var(--mavi);color:var(--mavi)}
+.cip:focus-visible{outline:3px solid var(--gok);outline-offset:2px}
+
+/* ═══ Hizmetler: gece mavisi bant + buzlu cam kartlar ═══ */
+.koyu{background:linear-gradient(180deg,var(--lacivert) 0%,var(--lacivert-koyu) 100%);color:#EEF1FA}
+.koyu h2{color:#fff}
+.hizmet-izgara{display:grid;gap:1rem;margin-top:2.2rem}
+@media(min-width:820px){.hizmet-izgara{grid-template-columns:repeat(3,1fr);gap:1.2rem}}
+.kart{border:1px solid var(--cizgi-bant);border-top-width:3px;border-radius:var(--radius);padding:1.7rem 1.5rem;background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;gap:.7rem;transition:border-color .2s,transform .2s}
+.kart:nth-child(1){border-top-color:var(--gok)}
+.kart:nth-child(2){border-top-color:var(--yesil)}
+.kart:nth-child(3){border-top-color:var(--pembe-ham)}
+.kart:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32);border-top-width:3px}
+.kart:nth-child(1):hover{border-top-color:var(--gok)}
+.kart:nth-child(2):hover{border-top-color:var(--yesil)}
+.kart:nth-child(3):hover{border-top-color:var(--pembe-ham)}
+.kart h3{font-size:1.28rem;color:#fff}
+.kart p{color:#C4CBE4;font-size:.95rem;flex:1}
+.kart a{color:var(--acik-mavi);font-size:.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:.35rem}
+.kart a:hover{color:#fff}
+.kart a::after{content:"→"}
+
+/* ═══ Online seans deneyimi — toz mavi bant ═══ */
+.seans{background:rgba(228,235,242,.6)}
+.seans-izgara{display:grid;gap:2.2rem;align-items:center}
+@media(min-width:880px){.seans-izgara{grid-template-columns:minmax(280px,440px) 1fr;gap:4rem}}
+.seans-gorsel{border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 44px rgba(27,29,75,.14)}
+.seans-gorsel img{width:100%;height:auto}
+.seans-metin{color:var(--soluk);max-width:56ch;margin-top:.4rem}
+
+/* ═══ SSS ═══ */
+.sss{max-width:46rem;margin-top:2rem}
+.sss details{border-bottom:1px solid var(--cizgi)}
+.sss summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.15rem 0;font-weight:600;font-size:1.02rem;color:var(--murekkep)}
+.sss summary::-webkit-details-marker{display:none}
+.sss summary::after{content:"+";font-family:var(--serif);font-size:1.5rem;color:var(--pembe);transition:transform .2s;flex:none}
+.sss details[open] summary::after{transform:rotate(45deg)}
+.sss summary:focus-visible{outline:3px solid var(--gok);outline-offset:2px;border-radius:6px}
+.sss .cevap{padding:0 0 1.2rem;color:var(--soluk);max-width:60ch}
+
+/* ═══ Form: adaçayı paneli ═══ */
+.form-bolum{background:var(--adacayi)}
+.form-kutu{max-width:34rem}
+.form-kutu .ust-metin{color:var(--soluk);margin:.6rem 0 1.8rem}
+.alan{margin-bottom:1.1rem}
+.alan label{display:block;font-weight:600;font-size:.92rem;margin-bottom:.4rem}
+.alan input,.alan select{width:100%;font:inherit;padding:.85rem 1rem;border:1px solid rgba(27,29,75,.22);border-radius:10px;background:#fff;color:var(--murekkep);min-height:50px}
+.alan input:focus,.alan select:focus{outline:3px solid var(--gok);outline-offset:1px;border-color:var(--mavi)}
+.onay{display:flex;gap:.6rem;align-items:flex-start;font-size:.85rem;color:var(--soluk);margin:1.2rem 0 1.4rem}
+.onay input{width:1.15rem;height:1.15rem;margin-top:.15rem;flex:none;accent-color:var(--mavi)}
+.onay a{color:var(--gok);font-weight:600}
+.form-kutu .btn{width:100%;font-size:1.05rem;padding:1.05rem 1.5rem}
+.durum{margin-top:.9rem;font-size:.92rem;min-height:1.4em}
+.durum.hata{color:#B3261E;font-weight:600}
+.gizli-alan{position:absolute;left:-9999px;top:-9999px;height:1px;width:1px;overflow:hidden}
+.mini-not{margin-top:1rem;font-size:.82rem;color:var(--soluk)}
+
+/* ═══ Footer ═══ */
+.alt{background:var(--lacivert-koyu);color:#B9C1E0;padding:3rem 0 2.2rem;font-size:.9rem}
+.alt .marka-yazi{font-size:1.12rem;color:#fff}
+.alt-izgara{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.6rem;align-items:flex-start}
+.alt-linkler{display:flex;flex-direction:column;gap:.55rem}
+.alt-linkler a{color:#B9C1E0;text-decoration:none}
+.alt-linkler a:hover{color:var(--acik-mavi)}
+.alt-cizgi{border:0;border-top:1px solid rgba(255,255,255,.14);margin:2rem 0 1.4rem}
+.alt-son{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;font-size:.82rem}
+.alt-son a{color:#B9C1E0}
+
+/* ═══ Giriş animasyonu ═══ */
+@media(prefers-reduced-motion:no-preference){
+  .belir{opacity:0;transform:translateY(14px);animation:belir .7s ease forwards}
+  .belir-2{animation-delay:.12s}
+  .belir-3{animation-delay:.24s}
+  .belir-4{animation-delay:.36s}
+  @keyframes belir{to{opacity:1;transform:none}}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ▼ META PIXEL noscript kodu buraya (body açılışının hemen altı) -->
+
+<!-- ▲ noscript sonu -->
+
+<!-- ═══ BLOK A: Header ═══ -->
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="marka" href="#" aria-label="MetaPsikoloji ana sayfa">
+      <span class="marka-yazi">meta<b>PSiKOLOJi</b></span>
+    </a>
+    <div class="ust-eylem">
+      <!-- Doğrudan arama dönüşümü -->
+      <a id="phone-direct-conversion" class="btn btn-ara" href="tel:+90XXXXXXXXXX">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="gizle">Hemen&nbsp;</span>Ara
+      </a>
+      <!-- Kurumsal WhatsApp dönüşümü -->
+      <a id="wa-kurumsal-conversion" class="btn btn-wa" target="_blank" rel="noopener"
+         href="https://wa.me/90XXXXXXXXXX?text=Merhaba%20MetaPsikoloji%2C%20online%20psikolog%20hizmetleriniz%20ve%20randevu%20detaylar%C4%B1%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.53 14.9L2 22l5.25-1.47A9.9 9.9 0 1 0 12.04 2Zm0 18.06a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.06.86.87-2.98-.2-.31a8.14 8.14 0 1 1 6.82 3.74Zm4.46-6.1c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.5.11-.11.24-.28.37-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.65.3-.22.24-.85.83-.85 2.03s.87 2.36 1 2.52c.12.16 1.72 2.62 4.16 3.68.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg>
+        WhatsApp <span class="gizle">Randevu</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══ BLOK B: Hero ═══ -->
+<section class="kahraman">
+  <div class="hero-foto" aria-hidden="true"></div>
+  <div class="dag" aria-hidden="true">
+    <svg data-hiz="0.05" viewBox="0 0 1440 480" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(47,86,159,.10)" d="M0 480V300l140-96 120 60 160-120 180 96 150-70 170 110 140-60 160 84 120-48 100 62v162Z"/></svg>
+    <svg data-hiz="0.11" viewBox="0 0 1440 480" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(141,198,163,.20)" d="M0 480V356l170-92 140 66 190-118 160 92 180-64 150 96 170-52 160 76 120-40v156Z"/></svg>
+    <svg data-hiz="0.18" viewBox="0 0 1440 480" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(27,29,75,.10)" d="M0 480V410l190-74 160 52 200-92 180 70 190-46 170 66 190-38 160 52v130Z"/></svg>
+  </div>
+  <div class="halka halka-1" aria-hidden="true"></div>
+  <div class="halka halka-2" aria-hidden="true"></div>
+  <div class="halka halka-3" aria-hidden="true"></div>
+  <div class="kap">
+    <div class="cam">
+    <p class="gozluk belir">Türkiye ve Avrupa'daki Türkler için çevrimiçi terapi</p>
+    <h1 class="belir belir-2">
+      <span class="h1-marka">MetaPsikoloji</span>
+      <span class="h1-ayrac">|</span>
+      Sınırları Aşan Profesyonel Online Psikolog Hizmeti
+    </h1>
+    <p class="alt-baslik belir belir-3">Ev konforunda, trafik stresi yaşamadan; 6 yıllık klinik tecrübe ve akademik uzmanlıkla ruh sağlığınızı destekleyin.</p>
+    <div class="cta-grup belir belir-4">
+      <a class="btn btn-birincil" href="#randevu-formu">Ücretsiz Ön Görüşme Randevusu Al</a>
+      <!-- Hero WhatsApp dönüşümü (kurumsal mesaj, ayrı ID ile ölçülür) -->
+      <a id="wa-hero-conversion" class="btn btn-wa" target="_blank" rel="noopener"
+         href="https://wa.me/90XXXXXXXXXX?text=Merhaba%20MetaPsikoloji%2C%20online%20psikolog%20hizmetleriniz%20ve%20randevu%20detaylar%C4%B1%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F">
+        WhatsApp ile Hemen Bağlan
+      </a>
+    </div>
+    <p class="guven-notu belir belir-4"><b>İlk ön görüşme ücretsizdir.</b> Bilgileriniz gizlilik ilkeleri çerçevesinde korunur.</p>
+    </div>
+  </div>
+  <div class="serit">
+    <div class="kap serit-ic">
+      <div class="serit-oge"><b>6+</b> yıl aktif klinisyenlik ve terapi deneyimi</div>
+      <div class="serit-oge"><b>%100</b> gizlilik ve etik çerçevede çalışma</div>
+      <div class="serit-oge"><b>TR&nbsp;·&nbsp;EU</b> saat dilimlerine uygun randevu</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOK C: Otorite ve Uzmanlık ═══ -->
+<section class="bolum" id="uzman">
+  <div class="kap">
+    <p class="gozluk">Uzmanınız</p>
+    <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem);max-width:26ch">Uzman Psikolog Emin Soydan ile Online ve Güvenli Terapi</h2>
+    <div class="uzman-izgara" style="margin-top:2.2rem">
+      <!-- Fotoğraf geldiğinde bu div yerine:
+           <img src="gorseller/uzman-fotograf.webp" alt="Uzman Psikolog Emin Soydan" class="foto" width="380" height="475"> -->
+      <div class="foto-cerceve" role="img" aria-label="Uzman fotoğrafı için ayrılmış alan">
+        Uzman fotoğrafı buraya gelecek<br>(gorseller/uzman-fotograf.webp)
+      </div>
+      <div class="uzman-metin">
+        <p><b>Psikoloji lisans eğitimini</b> tamamladıktan sonra klinik psikoloji alanında kapsamlı eğitimler alan Emin Soydan, <b>6 yıldır aktif klinisyen ve terapist</b> olarak çalışmaktadır. Aldığı klinik psikoloji eğitimlerinin tamamına <a href="https://www.linkedin.com/in/emin-soydan-a88654137" target="_blank" rel="noopener" style="font-weight:600">LinkedIn profilinden</a> ulaşabilirsiniz.</p>
+        <p>Online seanslar; yüz yüze terapinin bilimsel ve etik standartlarını çevrimiçi ortama taşıyan <b>uluslararası online terapi etik şablonlarına uygun</b> olarak yürütülür. Görüşmeler güvenli platformlar üzerinden, tam gizlilik ilkesiyle gerçekleştirilir.</p>
+        <p>Danışan ile terapist arasındaki güven ilişkisi sürecin temelidir. Bu nedenle ilk adım her zaman <b>ücretsiz bir ön görüşmedir</b>: birbirimizi tanır, ihtiyacınızı birlikte netleştiririz.</p>
+        <!-- Uzmana özgü WhatsApp dönüşümü -->
+        <a id="wa-uzman-conversion" class="btn btn-cerceve" target="_blank" rel="noopener"
+           href="https://wa.me/90XXXXXXXXXX?text=Merhaba%20Emin%20Bey%2C%20uzmanl%C4%B1%C4%9F%C4%B1n%C4%B1z%20ve%20online%20terapi%20s%C3%BCreci%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.53 14.9L2 22l5.25-1.47A9.9 9.9 0 1 0 12.04 2Z"/></svg>
+          Emin Soydan'a WhatsApp'tan Soru Sorun
+        </a>
+
+        <div class="rozetler">
+          <p class="rozet-baslik">Eğitim ve Sertifikalar</p>
+          <div class="rozet-izgara">
+            <!-- Logolar geldiğinde her kutu yerine <img src="gorseller/sertifika-1.png" alt="..."> -->
+            <div class="rozet">Sertifika logosu 1</div>
+            <div class="rozet">Sertifika logosu 2</div>
+            <div class="rozet">Sertifika logosu 3</div>
+            <div class="rozet">Sertifika logosu 4</div>
+          </div>
+        </div>
+
+        <div class="sosyal">
+          <p class="rozet-baslik">Dijital hesaplarımızı inceleyin</p>
+          <div class="sosyal-izgara">
+            <a id="ig-metapsikoloji-click" class="cip" href="https://www.instagram.com/metapsikoloji_tr/" target="_blank" rel="noopener">Instagram · MetaPsikoloji</a>
+            <a id="ig-eminsoydan-click" class="cip" href="https://www.instagram.com/psk.eminsoydan/" target="_blank" rel="noopener">Instagram · Psk. Emin Soydan</a>
+            <a id="li-metapsikoloji-click" class="cip" href="https://www.linkedin.com/company/metapsikoloji" target="_blank" rel="noopener">LinkedIn · MetaPsikoloji</a>
+            <a id="li-eminsoydan-click" class="cip" href="https://www.linkedin.com/in/emin-soydan-a88654137" target="_blank" rel="noopener">LinkedIn · Psk. Emin Soydan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOK D: Hizmet Alanları ═══ -->
+<section class="bolum koyu" id="hizmetler">
+  <div class="kap">
+    <p class="gozluk">Çalışma Alanları</p>
+    <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)">Çevrimiçi Terapi ve Danışmanlık Çözümleri</h2>
+    <div class="hizmet-izgara">
+      <article class="kart">
+        <h3>Bireysel Yetişkin Danışmanlığı</h3>
+        <p>Kaygı, stres, ilişki problemleri, yaşam geçişleri ve kendini tanıma süreçlerinde; bilimsel temelli, size özel bir terapi planıyla ilerleriz.</p>
+        <a href="#randevu-formu">Ücretsiz ön görüşme</a>
+      </article>
+      <article class="kart">
+        <h3>Ergen ve Genç Danışmanlığı</h3>
+        <p>Ergenlik dönemi zorlukları, sınav kaygısı, motivasyon ve aile içi iletişim konularında gençlere ve ailelerine çevrimiçi destek sağlıyoruz.</p>
+        <a href="#randevu-formu">Ücretsiz ön görüşme</a>
+      </article>
+      <article class="kart">
+        <h3>Türkçe Online Psikolog — Yurt Dışındaki Türkler</h3>
+        <p>Avrupa'da yaşayan Türkler için ana dilde terapi: kültürünüzü bilen bir uzmanla, bulunduğunuz ülkenin saat dilimine uygun randevularla.</p>
+        <a href="#randevu-formu">Ücretsiz ön görüşme</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Online Seans Deneyimi ═══ -->
+<section class="bolum seans">
+  <div class="kap seans-izgara">
+    <figure class="seans-gorsel">
+      <img src="gorseller/online-seans.webp" alt="Gün ışığı alan ahşap bir masada online terapi seansına hazır dizüstü bilgisayar" width="932" height="932" loading="lazy">
+    </figure>
+    <div>
+      <p class="gozluk">Seans Deneyimi</p>
+      <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem);max-width:22ch">Soğuk bir ekran değil, güvenli bir alan</h2>
+      <p class="seans-metin">Seanslarınız; evinizin sessiz bir köşesinde, kahveniz yanınızdayken, güvenli video platformları üzerinden gerçekleşir. Trafik yok, bekleme salonu yok — yalnızca size ayrılmış, kesintisiz bir saat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOK E-1: SSS ═══ -->
+<section class="bolum" id="sss">
+  <div class="kap">
+    <p class="gozluk">Merak Edilenler</p>
+    <h2 style="font-size:clamp(1.5rem,3.6vw,2.2rem)">Sıkça Sorulan Sorular</h2>
+    <div class="sss">
+      <details>
+        <summary>Online terapi güvenli ve etkili mi?</summary>
+        <p class="cevap">Evet. Bilimsel araştırmalar, online terapinin birçok alanda yüz yüze terapiyle karşılaştırılabilir sonuçlar verdiğini göstermektedir. Seanslarımız, online terapi için geliştirilmiş etik ve klinik standartlara uygun yürütülür.</p>
+      </details>
+      <details>
+        <summary>Seanslar nasıl ve hangi platform üzerinden yapılıyor?</summary>
+        <p class="cevap">Görüşmeler, uçtan uca şifreli ve güvenli video görüşme platformları üzerinden yapılır. Randevunuz onaylandığında bağlantı linki size iletilir; ek bir program kurmanız gerekmez.</p>
+      </details>
+      <details>
+        <summary>Seanslar ne kadar sürüyor?</summary>
+        <p class="cevap">Standart terapi seansları yaklaşık [50] dakika sürer. Ücretsiz ön görüşme ise yaklaşık [15] dakikadır; bu görüşmede ihtiyacınızı birlikte değerlendirir ve süreci planlarız.</p>
+      </details>
+      <details>
+        <summary>Gizliliğim nasıl korunuyor?</summary>
+        <p class="cevap">Tüm görüşme içerikleri ve kişisel verileriniz, meslek etiği ve KVKK kapsamında gizli tutulur; üçüncü kişilerle paylaşılmaz. Detaylar için sayfa altındaki KVKK Aydınlatma Metni'ni inceleyebilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Yurt dışından katılabilir miyim? Saat farkı sorun olur mu?</summary>
+        <p class="cevap">Elbette. Danışanlarımızın önemli bir bölümü Avrupa'da yaşayan Türklerden oluşuyor. Randevular, bulunduğunuz ülkenin saat dilimine göre birlikte planlanır.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOK E-2: İletişim Formu ═══ -->
+<section class="bolum form-bolum" id="randevu-formu">
+  <div class="kap">
+    <div class="form-kutu">
+      <p class="gozluk">Randevu</p>
+      <h2 style="font-size:clamp(1.5rem,3.6vw,2.1rem)">Ücretsiz Ön Görüşme Randevusu Alın</h2>
+      <p class="ust-metin">Formu doldurun; size en geç 24 saat içinde dönüş yapalım.</p>
+
+      <form id="randevu" method="POST" novalidate>
+        <div class="alan">
+          <label for="ad">Ad Soyad</label>
+          <input type="text" id="ad" name="ad" autocomplete="name" required>
+        </div>
+        <div class="alan">
+          <label for="telefon">Telefon Numarası</label>
+          <input type="tel" id="telefon" name="telefon" inputmode="tel" autocomplete="tel" placeholder="0 5__ ___ __ __" pattern="[0-9+()\s-]{10,17}" required>
+        </div>
+        <div class="alan">
+          <label for="neden">Başvuru Nedeni</label>
+          <select id="neden" name="neden" required>
+            <option value="" selected disabled>Seçiniz</option>
+            <option value="Bireysel">Bireysel Danışmanlık</option>
+            <option value="Cift">Çift Danışmanlığı</option>
+            <option value="Ergen">Ergen / Genç Danışmanlığı</option>
+            <option value="Expat">Yurt Dışında Yaşıyorum (Expat)</option>
+          </select>
+        </div>
+
+        <!-- Spam tuzağı (honeypot): gerçek kullanıcılar görmez, botlar doldurur -->
+        <div class="gizli-alan" aria-hidden="true">
+          <label for="website">Web siteniz</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Kanal ölçümü: reklam parametreleri form verisiyle birlikte Sheets'e işlenir -->
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="gclid" value="">
+        <input type="hidden" name="kaynak_sayfa" value="">
+
+        <div class="onay">
+          <input type="checkbox" id="kvkk" name="kvkk_onay" value="Onaylandi" required>
+          <label for="kvkk"><a href="kvkk-aydinlatma-metni.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a>'ni okudum; kişisel verilerimin randevu talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.</label>
+        </div>
+
+        <button id="form-submit-success" class="btn btn-birincil" type="submit">Bilgilerimi Gönder ve Randevu Talebi Oluştur</button>
+        <p class="durum" id="form-durum" aria-live="polite"></p>
+      </form>
+      <p class="mini-not">Bilgileriniz yalnızca randevu talebiniz için kullanılır ve üçüncü kişilerle paylaşılmaz.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ BLOK F: Footer ═══ -->
+<footer class="alt">
+  <div class="kap">
+    <div class="alt-izgara">
+      <div>
+        <span class="marka-yazi">meta<b>PSiKOLOJi</b></span>
+        <p style="max-width:34ch;margin-top:.7rem">Sınırları aşan profesyonel online psikolog hizmeti. Türkiye ve Avrupa'daki Türkler için ana dilde, güvenli çevrimiçi terapi.</p>
+      </div>
+      <nav class="alt-linkler" aria-label="Yasal bağlantılar">
+        <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+        <a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a>
+        <a href="mesafeli-hizmet-sozlesmesi.html">Mesafeli Hizmet Sözleşmesi</a>
+      </nav>
+    </div>
+    <hr class="alt-cizgi">
+    <div class="alt-son">
+      <span>© <span id="yil">2026</span> MetaPsikoloji. Tüm hakları saklıdır.</span>
+      <a href="https://www.metapsikoloji.com.tr" target="_blank" rel="noopener">Kurumsal sitemiz: metapsikoloji.com.tr</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ═══ 1) Form uç noktası — KURULUM.md Adım 2'de oluşturacağınız
+       Google Apps Script Web App URL'sini buraya yapıştırın ═══ */
+var FORM_ENDPOINT = "BURAYA_APPS_SCRIPT_URL_YAPISTIRIN";
+
+/* ═══ 2) Reklam parametrelerini yakala (kanal ölçümü) ═══ */
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var anahtarlar = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid"];
+    anahtarlar.forEach(function (k) {
+      var v = params.get(k);
+      if (v) sessionStorage.setItem("mp_" + k, v); // sayfa yenilense de kaybolmasın
+      var kayitli = sessionStorage.getItem("mp_" + k);
+      var alan = document.querySelector('input[name="' + k + '"]');
+      if (alan && kayitli) alan.value = kayitli;
+    });
+    var sayfa = document.querySelector('input[name="kaynak_sayfa"]');
+    if (sayfa) sayfa.value = window.location.href.split("#")[0];
+  } catch (e) { /* sessiz geç */ }
+})();
+
+/* ═══ 3) Form gönderimi: Sheets + e-posta → /tesekkurler ═══ */
+(function () {
+  var form = document.getElementById("randevu");
+  var buton = document.getElementById("form-submit-success");
+  var durum = document.getElementById("form-durum");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    durum.textContent = "";
+    durum.classList.remove("hata");
+
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    if (form.website && form.website.value) return; // honeypot doluysa sessizce durdur
+
+    if (FORM_ENDPOINT.indexOf("http") !== 0) {
+      durum.classList.add("hata");
+      durum.textContent = "Form altyapısı henüz bağlanmadı. (KURULUM.md — Adım 2)";
+      return;
+    }
+
+    buton.disabled = true;
+    var eskiMetin = buton.textContent;
+    buton.textContent = "Gönderiliyor…";
+
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then(function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "form_submit_success" });
+        window.location.href = "tesekkurler.html";
+      })
+      .catch(function () {
+        buton.disabled = false;
+        buton.textContent = eskiMetin;
+        durum.classList.add("hata");
+        durum.textContent = "Gönderim başarısız oldu. Lütfen tekrar deneyin ya da WhatsApp üzerinden ulaşın.";
+      });
+  });
+})();
+
+/* ═══ 4) Soft paralaks — hareket azaltma tercihine saygılı ═══ */
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var katlar = document.querySelectorAll("[data-hiz]");
+  if (!katlar.length) return;
+  var bekliyor = false;
+  window.addEventListener("scroll", function () {
+    if (bekliyor) return;
+    bekliyor = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      katlar.forEach(function (k) {
+        k.style.transform = "translateY(" + (y * parseFloat(k.dataset.hiz)) + "px)";
+      });
+      bekliyor = false;
+    });
+  }, { passive: true });
+})();
+
+/* Yıl */
+document.getElementById("yil").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
